@@ -23,6 +23,7 @@ import OddorEven from './Namaste Dev/OddorEven'
 import AutoSaveForm from './Namaste Dev/AutoFormSave'
 import TodoApp from './Namaste Dev/TodoApp'
 import Pagination from './Nitesh Sir Questions/Pagination'
+import FetchData from './Nitesh Sir Questions/FetchData'
 
 const App = () => {
 
@@ -88,7 +89,8 @@ const App = () => {
 
         {/* <-----------------Nitesh Sir questions---------------> */}
 
-        <Pagination data={data}/>
+        {/* <Pagination data={data}/> */}
+        <FetchData/>
 
     </div>
   )
