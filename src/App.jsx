@@ -22,12 +22,19 @@ import CustomHook from './Custom Hooks/CustomHook'
 import OddorEven from './Namaste Dev/OddorEven'
 import AutoSaveForm from './Namaste Dev/AutoFormSave'
 import TodoApp from './Namaste Dev/TodoApp'
+import Pagination from './Nitesh Sir Questions/Pagination'
 
 const App = () => {
 
+  // const data = [
+  //   {name : "Prisans" , description: "Student"},
+  //   {name : "Shivam" , description : "Accio Student"}
+  // ]
+
+
   const data = [
-    {name : "Prisans" , description: "Student"},
-    {name : "Shivam" , description : "Accio Student"}
+    "Apple","Banana","Orange","Grapes","Mango",
+    "Pineapple","Papaya","Kiwi","Peach","Berry"
   ]
   
   return (
@@ -68,7 +75,7 @@ const App = () => {
         {/* <AutoSave/> */}
         {/* <OddorEven/> */}
         {/* <AutoSaveForm/> {pass data as objects in string} */}
-        <TodoApp/>
+        {/* <TodoApp/> */}
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -78,6 +85,10 @@ const App = () => {
         {/* <---------React custom hooks-----------> */}
 
         {/* <CustomHook/> */}
+
+        {/* <-----------------Nitesh Sir questions---------------> */}
+
+        <Pagination data={data}/>
 
     </div>
   )
