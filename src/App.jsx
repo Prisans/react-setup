@@ -24,6 +24,11 @@ import AutoSaveForm from './Namaste Dev/AutoFormSave'
 import TodoApp from './Namaste Dev/TodoApp'
 import Pagination from './Nitesh Sir Questions/Pagination'
 import FetchData from './Nitesh Sir Questions/FetchData'
+// import ReactRouter from './React Router DOM/ReactRouter'
+import Product from './React Router DOM/Product'
+import {BrowserRouter, Route,Routes } from 'react-router-dom'
+import ProductPage from './React Router DOM/ProductPage'
+import ProgressBar from './Namaste Dev/Progress Bar/ProgressBar'
 
 const App = () => {
 
@@ -77,6 +82,7 @@ const App = () => {
         {/* <OddorEven/> */}
         {/* <AutoSaveForm/> {pass data as objects in string} */}
         {/* <TodoApp/> */}
+        <ProgressBar/>
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -90,7 +96,15 @@ const App = () => {
         {/* <-----------------Nitesh Sir questions---------------> */}
 
         {/* <Pagination data={data}/> */}
-        <FetchData/>
+        {/* <FetchData/> */}
+
+        {/* <------------------React Router ------------------> */}
+        {/* <Route path='/navbar' element={<Navbar />}/> */}
+        {/* <Routes>
+          <Route path='/items' element={<Product/>} />
+          <Route path='/product/:id' element={<ProductPage/>} />
+          <Route path="*" element={<h1>Path Not found</h1>}/>
+        </Routes> */}
 
     </div>
   )
