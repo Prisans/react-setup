@@ -31,6 +31,7 @@ import ProductPage from './React Router DOM/ProductPage'
 import ProgressBar from './Namaste Dev/Progress Bar/ProgressBar'
 import Ref from './Ref Hook/Ref'
 import Movie from './AccioJob Questions/Movie'
+import CharacterCount from './Namaste Dev/CharacterCount'
 
 const App = () => {
 
@@ -85,6 +86,7 @@ const App = () => {
         {/* <AutoSaveForm/> {pass data as objects in string} */}
         {/* <TodoApp/> */}
         {/* <ProgressBar/> */}
+        <CharacterCount/>
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -114,7 +116,7 @@ const App = () => {
 
         {/* <---------------Acciojob questions-------------------> */}
 
-        <Movie/>
+        {/* <Movie/> */}
         
     </div>
   )
