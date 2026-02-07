@@ -29,6 +29,8 @@ import Product from './React Router DOM/Product'
 import {BrowserRouter, Route,Routes } from 'react-router-dom'
 import ProductPage from './React Router DOM/ProductPage'
 import ProgressBar from './Namaste Dev/Progress Bar/ProgressBar'
+import Ref from './Ref Hook/Ref'
+import Movie from './AccioJob Questions/Movie'
 
 const App = () => {
 
@@ -82,7 +84,7 @@ const App = () => {
         {/* <OddorEven/> */}
         {/* <AutoSaveForm/> {pass data as objects in string} */}
         {/* <TodoApp/> */}
-        <ProgressBar/>
+        {/* <ProgressBar/> */}
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -106,6 +108,14 @@ const App = () => {
           <Route path="*" element={<h1>Path Not found</h1>}/>
         </Routes> */}
 
+      {/* <--------------------useRef--------------------------> */}
+
+        {/* <Ref/> */}
+
+        {/* <---------------Acciojob questions-------------------> */}
+
+        <Movie/>
+        
     </div>
   )
 }
