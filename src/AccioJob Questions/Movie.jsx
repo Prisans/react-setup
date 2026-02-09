@@ -18,6 +18,7 @@ const Movie = () => {
         .then(data =>(data.Response === "False"?setError(data.Error):(setMovie(data),setError(""))))
         .catch((err) => setError(err.Error)).finally(()=>setLoading(false))
     }
+    
 
    function debounce(fn,delay){
         
@@ -32,7 +33,9 @@ const Movie = () => {
     const debounceFuntion = debounce(fetchMovie,1000)
   
     useEffect(() => {
-      debounceFuntion()
+      if(text.length != 0){
+        debounceFuntion()
+      }
     // fetchMovie()
     }, [text]);
   

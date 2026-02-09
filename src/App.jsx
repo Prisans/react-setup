@@ -86,7 +86,7 @@ const App = () => {
         {/* <AutoSaveForm/> {pass data as objects in string} */}
         {/* <TodoApp/> */}
         {/* <ProgressBar/> */}
-        <CharacterCount/>
+        {/* <CharacterCount/> */}
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -116,7 +116,7 @@ const App = () => {
 
         {/* <---------------Acciojob questions-------------------> */}
 
-        {/* <Movie/> */}
+        <Movie/>
         
     </div>
   )
