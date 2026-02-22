@@ -32,6 +32,7 @@ import ProgressBar from './Namaste Dev/Progress Bar/ProgressBar'
 import Ref from './Ref Hook/Ref'
 import Movie from './AccioJob Questions/Movie'
 import CharacterCount from './Namaste Dev/CharacterCount'
+import LuckyNumber from './Namaste Dev/LuckyNumber'
 
 const App = () => {
 
@@ -47,7 +48,7 @@ const App = () => {
   ]
   
   return (
-    <div>
+    <div className='app'>
         {/* <-------------------useState-------------------> */}
 
         {/* <Counter/> */}
@@ -87,6 +88,7 @@ const App = () => {
         {/* <TodoApp/> */}
         {/* <ProgressBar/> */}
         {/* <CharacterCount/> */}
+        <LuckyNumber/>
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -116,7 +118,7 @@ const App = () => {
 
         {/* <---------------Acciojob questions-------------------> */}
 
-        <Movie/>
+        {/* <Movie/> */}
         
     </div>
   )
