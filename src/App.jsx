@@ -33,6 +33,10 @@ import Ref from './Ref Hook/Ref'
 import Movie from './AccioJob Questions/Movie'
 import CharacterCount from './Namaste Dev/CharacterCount'
 import LuckyNumber from './Namaste Dev/LuckyNumber'
+import CouterRedux from './Redux/Core Redux/CouterRedux'
+import { Provider } from 'react-redux'
+import { store } from './Redux/Core Redux/store'
+import ReduxTodo from './Redux/Core Redux/ReduxTodo'
 
 const App = () => {
 
@@ -88,7 +92,7 @@ const App = () => {
         {/* <TodoApp/> */}
         {/* <ProgressBar/> */}
         {/* <CharacterCount/> */}
-        <LuckyNumber/>
+        {/* <LuckyNumber/> */}
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -119,6 +123,14 @@ const App = () => {
         {/* <---------------Acciojob questions-------------------> */}
 
         {/* <Movie/> */}
+
+        {/* <-----------react redux------------------------> */}
+
+        <Provider store={store}>
+        <CouterRedux/>
+        <ReduxTodo/>
+        </Provider>
+
         
     </div>
   )
