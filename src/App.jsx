@@ -37,6 +37,8 @@ import CouterRedux from './Redux/Core Redux/CouterRedux'
 import { Provider } from 'react-redux'
 import { store } from './Redux/Core Redux/store'
 import ReduxTodo from './Redux/Core Redux/ReduxTodo'
+import TableData from './Nitesh Sir Questions/TableData'
+import CaptchaGenerator from './Namaste Dev/CaptchaGenerator'
 
 const App = () => {
 
@@ -93,6 +95,7 @@ const App = () => {
         {/* <ProgressBar/> */}
         {/* <CharacterCount/> */}
         {/* <LuckyNumber/> */}
+        <CaptchaGenerator/>
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -107,6 +110,7 @@ const App = () => {
 
         {/* <Pagination data={data}/> */}
         {/* <FetchData/> */}
+        {/* <TableData/> */}
 
         {/* <------------------React Router ------------------> */}
         {/* <Route path='/navbar' element={<Navbar />}/> */}
@@ -126,10 +130,10 @@ const App = () => {
 
         {/* <-----------react redux------------------------> */}
 
-        <Provider store={store}>
+        {/* <Provider store={store}>
         <CouterRedux/>
         <ReduxTodo/>
-        </Provider>
+        </Provider> */}
 
         
     </div>
