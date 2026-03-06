@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 const CaptchaGenerator = () => {
     const [captcha,setCaptcha] = useState("")
     const [randomText,setRandomText] = useState("")
-    const [correct,setCorrect] = useState(null)
+    // const [correct,setCorrect] = useState(null)
+    const [message,setMessage] = useState("")
 
     function handleGenerate(){
         let length = 6
@@ -15,17 +16,17 @@ const CaptchaGenerator = () => {
             res = res + chars.charAt(Math.floor(Math.random()*chars.length))
         }
         setRandomText(res)
-        setCorrect(null)
         
-    }
-
-    function handleCaptchaSubmit(){
-        randomText.toLowerCase() === captcha.toLowerCase() ? setCorrect(true) : setCorrect(false)
-        setCaptcha("")
     }
 
     function handleSubmit(e){
         e.preventDefault()
+
+        if(captcha.toLowerCase() == randomText.toLowerCase()){
+            setMessage("Correct Captcha")
+        }else{
+            setMessage("Incorrect captcha")
+        }
     }
 
     useEffect(()=>{
@@ -39,10 +40,11 @@ const CaptchaGenerator = () => {
         <h2>Your captcha  - {randomText} </h2>
         <form onSubmit={handleSubmit}>
             <input value={captcha} onChange={(e)=>setCaptcha(e.target.value)}  type="text" placeholder='enter captcha...'/>
-            <button onClick={handleCaptchaSubmit} >Submit</button>
+            <button type='submit'>Submit</button>
             <button onClick={handleGenerate} >Regenreate</button>
         </form>
-        {correct === null ? "" : correct === true ? (<p>Correct Captcha</p>) : (<p>Incorrect Captcha</p>) }
+        {/* {correct === null ? "" : correct === true ? (<p>Correct Captcha</p>) : (<p>Incorrect Captcha</p>) } */}
+        {message && <p>{message}</p>}
     </div>
   )
 }
