@@ -13,14 +13,22 @@ const FetchData = () => {
     })
 
     console.log(filterData)
+
+     async function fetchData(){
+        const res = await fetch(API_URL)
+        const data = await res.json()
+        setData(data)
+    }
+
+    console.log("data is" , data)
     
 
-    function fetchData(){
-        fetch(API_URL)
-        .then(res=>res.json())
-        .then(item=>setData(item))
-        .catch(err=>console.log(err))
-    }
+    // function fetchData(){
+    //     fetch(API_URL)
+    //     .then(res=>res.json())
+    //     .then(item=>setData(item))
+    //     .catch(err=>console.log(err))
+    // }
 
     useEffect(()=>{
         fetchData()

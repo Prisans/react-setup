@@ -39,6 +39,9 @@ import { store } from './Redux/Core Redux/store'
 import ReduxTodo from './Redux/Core Redux/ReduxTodo'
 import TableData from './Nitesh Sir Questions/TableData'
 import CaptchaGenerator from './Namaste Dev/CaptchaGenerator'
+import CinemaHall from './Namaste Dev/CinemaHall'
+import Saketh from './Nitesh Sir Questions/Saketh'
+import PriceSlider from './Namaste Dev/PriceSlider'
 
 const App = () => {
 
@@ -95,7 +98,9 @@ const App = () => {
         {/* <ProgressBar/> */}
         {/* <CharacterCount/> */}
         {/* <LuckyNumber/> */}
-        <CaptchaGenerator/>
+        {/* <CaptchaGenerator/> */}
+        {/* <CinemaHall/> */}
+        <PriceSlider/>
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -111,6 +116,7 @@ const App = () => {
         {/* <Pagination data={data}/> */}
         {/* <FetchData/> */}
         {/* <TableData/> */}
+        {/* <Saketh/> */}
 
         {/* <------------------React Router ------------------> */}
         {/* <Route path='/navbar' element={<Navbar />}/> */}

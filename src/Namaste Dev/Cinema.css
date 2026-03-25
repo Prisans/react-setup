@@ -1,0 +1,26 @@
+    .upper{
+    display:flex;
+    justify-content:center;
+    }
+    
+    .lower{
+    width:40px;
+    height:40px;
+    border:1px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:3px;
+    cursor:pointer;
+    }
+    
+    .selected{
+    background:green;
+    color:white;
+    }
+    
+    .booked{
+    background:red;
+    color:white;
+    cursor:not-allowed;
+    }
