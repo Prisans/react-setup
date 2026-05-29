@@ -42,6 +42,7 @@ import CaptchaGenerator from './Namaste Dev/CaptchaGenerator'
 import CinemaHall from './Namaste Dev/CinemaHall'
 import Saketh from './Nitesh Sir Questions/Saketh'
 import PriceSlider from './Namaste Dev/PriceSlider'
+import NotificationBell from './Namaste Dev/Notification'
 
 const App = () => {
 
@@ -99,8 +100,9 @@ const App = () => {
         {/* <CharacterCount/> */}
         {/* <LuckyNumber/> */}
         {/* <CaptchaGenerator/> */}
-        {/* <CinemaHall/> */}
-        <PriceSlider/>
+        <CinemaHall/>
+        {/* <PriceSlider/> */}
+        {/* <NotificationBell/> */}
 
         {/* <-------------------------React.memo---------------------> */}
 
@@ -140,6 +142,8 @@ const App = () => {
         <CouterRedux/>
         <ReduxTodo/>
         </Provider> */}
+
+        <h1>This is a test</h1>
 
         
     </div>

@@ -12,7 +12,7 @@ const CinemaHall = () => {
         let ch = 65;
     
         for(let i=0;i<row;i++){
-          let arr = [];
+          let arr = []
     
           for(let j=0;j<row;j++){
             arr.push(String.fromCharCode(ch)+j);
